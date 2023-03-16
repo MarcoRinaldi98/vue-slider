@@ -60,7 +60,8 @@ createApp({
             this.autoplay = setInterval(this.goToNext, 3000);
         },
         stopAutoplay() {
-            clearInterval(this.autoplay);           
+            clearInterval(this.autoplay);
+            this.autoplay = null;           
         }
     }, mounted() {
         this.autoPlay();
